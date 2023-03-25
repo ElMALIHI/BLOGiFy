@@ -7,13 +7,15 @@ import { SITE_TITLE } from '../consts';
 	<h2>
 		{SITE_TITLE}
 	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="#" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="#" target="_blank">GitHub</HeaderLink>
-	</nav>
+	<nav style="background-color: #333; overflow: hidden;">
+		<HeaderLink style="float: left;" href="/">Home</HeaderLink>
+		<HeaderLink style="float: left;" href="/blog">Blog</HeaderLink>
+		<HeaderLink style="float: left;" href="/about">About</HeaderLink>
+		<div style="float: right;">
+		  <HeaderLink style="display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="#" target="_blank">Twitter</HeaderLink>
+		  <HeaderLink style="display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="#" target="_blank">GitHub</HeaderLink>
+		</div>
+	  </nav>
 </header>
 <style>
 	header {
